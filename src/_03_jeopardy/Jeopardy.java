@@ -78,11 +78,16 @@ panel.add(secondButton);
 firstButton.addActionListener(this);
 secondButton.addActionListener(this);
 		// 12. Write the code to complete the actionPerformed() method below
-
+JButton thirdbutton = createButton("8"); 
+JButton fourthbutton = createButton("10");
+panel.add(thirdbutton);
+panel.add(fourthbutton);
+thirdbutton.addActionListener(this);
+fourthbutton.addActionListener(this);
 		// 13. Add buttons so that you have $200, $400, $600, $800 and $1000 questions
+	
 		
-		 /*
-		 * [optional] Use the showImage or playSound methods when the user answers a
+		/* [optional] Use the showImage or playSound methods when the user answers a
 		 * question
 		 */		
 		
@@ -125,7 +130,14 @@ if (buttonPressed==secondButton) {
 	askQuestion("who had the highest IQ?", "Steven Hawking", 6);
 }
 			// Call the askQuestion() method with a harder question
-
+if (buttonPressed==thirdButton) {
+	askQuestion("What metal will be istantly tarnished when exposed to air?", "potassium" , 8);
+	buttonPressed.setText(" ");
+}
+if (buttonPressed==fourthButton) {
+	askQuestion("How much would a teaspoonful of a neutron star weigh", "6 billion tons" , 10);
+	buttonPressed.setText(" ");
+}
 		// Clear the text on the button that was pressed (set the button text to nothing)
 buttonPressed.setText(" ");
 	}

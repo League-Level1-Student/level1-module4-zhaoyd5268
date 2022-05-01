@@ -1,4 +1,5 @@
 package _07_fortune_teller;
+import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 /*
@@ -14,6 +15,6 @@ public class FortuneTellerRunner {
     
     static void begin() {
       	 // Welcome the user. Give them a hint for the secret location.
-
+JOptionPane.showMessageDialog(null, "Welcome. Your location is within 100 and 50 for X and Y coordinates.");
     }
 }
