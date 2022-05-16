@@ -1,5 +1,6 @@
 package _04_typing_tutor;
 
+
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -9,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import javafx.scene.control.Label;
+
 
 
 public class TypingTutor implements KeyListener {
